@@ -1,4 +1,4 @@
-# Ultra-Realistic Python Bootloader Simulation
+# Realistic Python Bootloader Simulation
 
 A highly detailed, multi-stage simulation of a computer's boot process, implemented purely in Python. This script mimics the Power-On Self-Test (POST), GRUB bootloader menu, Linux Kernel initialization, and the final login prompt using timing delays and ANSI escape codes for authentic terminal colors and formatting.
 
