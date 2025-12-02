@@ -34,7 +34,7 @@ The simulation progresses through four distinct stages:
 
 The script starts with a quick series of checks, displaying the system memory test and listing detected hardware devices (CPU, RAM, Drives, PCIe devices).
 
-## 🛠️ Free Use and Customization Policy
+## Free Use and Customization Policy
 
 This script was intentionally developed as an **open template** to realistically simulate a system boot process. You are free to use and adapt this code for any of your personal or creative projects.
 
