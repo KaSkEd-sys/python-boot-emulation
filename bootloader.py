@@ -1,7 +1,7 @@
 import time
 import os
 import sys
-
+from grub import stage_grub
 
 CLR_BLUE = "\033[34m"
 CLR_WHITE = "\033[37m" 
@@ -61,35 +61,6 @@ def stage_post():
     print(f"Attempting Boot From: NVMe Drive - Samsung 990 Pro...")
     print("******************************************************************\n")
     time.sleep(1.5)
-
-
-def stage_grub():
-    clear_screen()
-    print(f"{CLR_WHITE}GNU GRUB version 2.12 (Minimal BASH-like line editing is supported.)\n")
-    
-    menu = [
-        "Fake boot 24.04 LTS (Kernel 6.8.0-31-generic)",
-        "Fake boot (on /dev/nvme0n1p1)",
-        "Fake boot (UEFI Firmware Settings)"
-    ]
-    
-
-    for i, item in enumerate(menu):
-        if i == 0:
-            print(f"{CLR_INV}{item:<70}{CLR_RESET}")
-        else:
-            print(f"{CLR_WHITE}{item}")
-
-    print(f"\nUse the ^ and v keys to select. Press ENTER to boot, 'e' to edit, or 'c' for a command line.")
-    
-
-    time.sleep(1.5)
-    
-    print(f"\n{CLR_WHITE}Loading Linux 6.8.0-31-generic ...")
-    time.sleep(0.5)
-    print(f"Loading initial ramdisk ...")
-    time.sleep(0.5)
-
 
 def stage_kernel():
     clear_screen()
