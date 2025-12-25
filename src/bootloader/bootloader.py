@@ -1,7 +1,7 @@
 import time
 import os
 import sys
-from grub import stage_grub
+from grub.grub import stage_grub
 
 CLR_BLUE = "\033[34m"
 CLR_WHITE = "\033[37m" 
